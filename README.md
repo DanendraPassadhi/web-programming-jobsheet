@@ -6,4 +6,4 @@
 
 <h3 align="center">Languages and Tools:</h3>
 
-<p align="center"> <img src="https://skillicons.dev/icons?i=java" alt="java" width="40" height="40"> <img src="https://skillicons.dev/icons?i=git" alt="git" width="40" height="40"> <img src="https://skillicons.dev/icons?i=vscode" alt="vscode" width="40" height="40"> </p>
+<p align="center"> <img src="https://skillicons.dev/icons?i=html,css,javascript,php" alt="Languange"> <br> <img src="https://skillicons.dev/icons?i=git,vscode,figma" alt="tools"> </p>
