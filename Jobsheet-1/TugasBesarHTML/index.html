@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Besar HTML</title>
+
+    <style>
+      body {
+      }
+      .container {
+        position: relative;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+      }
+      .title {
+        position: absolute;
+        top: -15px;
+        left: 10px;
+        color: black;
+        background-color: white;
+        padding: 5px;
+      }
+      #ttl, #jenisKelamin {
+        margin-left: 10px;
+      }
+      #nama,
+      #email {
+        margin-right: 60px;
+      }
+      #komen {
+        width: 25rem;
+        height: 7rem;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="title">Data Mahasiswa</span>
+      <label for="nama" id="nama">Nama</label>
+      <input type="text" name="nama" /><br /><br />
+      <label for="email" id="email">Email</label>
+      <input type="text" name="email" /><br /><br />
+      <label for="ttl">Tanggal Lahir</label>
+      <input type="date" name="title" id="ttl" /><br /><br />
+      <label for="jenisKelamin">Jenis Kelamin</label>
+      <select name="jenisKelamin" id="jenisKelamin">
+        <option value="">Laki-Laki</option>
+        <option value="">Perempuan</option></select
+      ><br /><br />
+      <label for="komen">Alamat</label><br />
+      <textarea name="komen" id="komen"></textarea>
+    </div>
+
+    <div class="container">
+      <span class="title">Komentar</span>
+      <a id="tahu">Dari mana anda mengetahui buku ini ?</a>
+      <select name="tahu" id="">
+        <option value="">Google</option>
+        <option value="">Sosmed</option>
+      </select>
+      <p>Bagaimana Menurut anda terhadap buku ini?</p>
+      <input type="radio" name="biasa" />
+      <label for="biasa">Biasa</label>
+      <input type="radio" name="bagus" />
+      <label for="biasa">Bagus</label>
+      <input type="radio" name="menarik" />
+      <label for="biasa">Menarik</label><br /><br />
+      <label for="komen">Komentar Anda:</label><br />
+      <textarea name="komen"></textarea><br /><br />
+      <input type="checkbox" name="kirim" id="kirim" checked />
+      <label for="kirim">Kirim ke Email bila ada info terbaru</label>
+    </div>
+
+    <button>Kirim</button>
+  </body>
+</html>
