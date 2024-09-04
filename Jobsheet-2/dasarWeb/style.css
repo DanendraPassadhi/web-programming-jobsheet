@@ -1,3 +1,8 @@
+body {
+    background-color: lightcyan;
+    color: white;
+}
+
 h2 {
     color: orange;
     font-family: Trebuchet MS;
