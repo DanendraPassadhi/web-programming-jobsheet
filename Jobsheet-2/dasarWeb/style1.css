@@ -19,3 +19,11 @@ body {
     box-sizing: border-box;
     display: flex;
 }
+
+.sidebar-satu, .sidebar-dua {
+    width: 600px;
+}
+
+.kolom-utama {
+    width: 1800px;
+}
