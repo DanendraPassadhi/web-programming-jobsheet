@@ -1,0 +1,11 @@
+.Link {
+    font-size: 20pt;
+}
+
+.Link:link {
+    color: blue;
+}
+
+.Link:hover {
+    color:red;
+}
