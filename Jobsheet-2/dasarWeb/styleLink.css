@@ -6,6 +6,10 @@
     color: blue;
 }
 
+.Link:visited {
+    color: greenyellow;
+}
+
 .Link:hover {
     color:red;
 }
