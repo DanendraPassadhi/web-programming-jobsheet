@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Besar Javascript</title>
+</head>
+
+<body>
+    <label for="firstName">First Name : </label>
+    <input type="text" id="firstName"><br>
+    <label for="lastName">Last Name : </label>
+    <input type="text" id="lastName"><br>
+    <button onclick="validateForm()">Submit</button>
+</body>
+
+<script>
+    function validateForm() {
+        var firstName = document.getElementById("firstName").value;
+        var lastName = document.getElementById("lastName").value;
+        
+        if (!firstName && !lastName) {
+            alert("First Name dan Last Name belum terisi");
+            return;
+        }
+        if (!firstName) {
+            alert("First Name belum terisi");
+            return;
+        }
+        if (!lastName) {
+            alert("Last Name belum terisi");
+            return;
+        }
+        window.location.href = "selamatdatang.html";
+    }
+</script>
+</html>
