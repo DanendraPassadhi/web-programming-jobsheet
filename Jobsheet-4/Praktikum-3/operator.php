@@ -51,5 +51,11 @@ echo "Hasil Tambah = $a <br>";
 echo "Hasil Kurang = $a <br>";
 echo "Hasil Kali = $a <br>";
 echo "Hasil Bagi = $a <br>";
-echo "Hasil Modulus = $a <br>";
+echo "Hasil Modulus = $a <br><br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+echo "Hasil Identik = $hasilIdentik <br>";
+echo "Hasil Tidak Identik = $hasilTidakIdentik <br>";
 ?>
