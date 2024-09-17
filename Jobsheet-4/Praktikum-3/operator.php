@@ -29,5 +29,27 @@ echo "Hasil = $hasilTidakSama <br>";
 echo "Hasil = $hasilLebihKecil <br>";
 echo "Hasil = $hasilLebihBesar <br>";
 echo "Hasil = $hasilLebihKecilSama <br>";
-echo "Hasil = $hasilLebihBesarSama";
+echo "Hasil = $hasilLebihBesarSama <br><br>";
+
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;  
+$hasilNotA = !$a;     
+$hasilNotB = !$b;
+
+echo "Hasil = $hasilAnd <br>";
+echo "Hasil = $hasilOr <br>";
+echo "Hasil = $hasilNotA <br>";
+echo "Hasil = $hasilNotB <br><br>";
+
+$a += $b;
+$a -= $b;
+$a *= $b;
+$a /= $b;
+$a %= $b;
+
+echo "Hasil Tambah = $a <br>";
+echo "Hasil Kurang = $a <br>";
+echo "Hasil Kali = $a <br>";
+echo "Hasil Bagi = $a <br>";
+echo "Hasil Modulus = $a <br>";
 ?>
