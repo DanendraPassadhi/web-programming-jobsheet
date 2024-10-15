@@ -5,11 +5,12 @@ if (isset($_FILES['file'])) {
     $file_size = $_FILES['file']['size'];
     $file_tmp = $_FILES['file']['tmp_name'];
     $file_type = $_FILES['file']['type'];
-    $file_ext = strtolower(end(explode('.', $_FILES['file']['name'])));
-    $extensions = array("pdf", "doc", "docx", "txt");
+    $file_name_parts = explode('.', $_FILES['file']['name']);
+    $file_ext = strtolower(end($file_name_parts));
+    $extensions = array("jpg", "jpeg", "png", "gif");
 
     if (in_array($file_ext, $extensions) === false) {
-        $errors[] = "Ekstensi file yang diizinkan adalah PDF, DOC, DOCX, atau TXT.";
+        $errors[] = "Ekstensi file yang diizinkan adalah JPG, JPEG, PNG, atau GIF.";
     }
 
     if ($file_size > 2097152) {
