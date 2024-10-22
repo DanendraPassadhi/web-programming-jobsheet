@@ -1,5 +1,4 @@
 <?php
-
 $koneksi = mysqli_connect("localhost", "root", "", "phealing");
 
 $nama = htmlspecialchars($_POST["nama"]);
@@ -59,5 +58,4 @@ if ($result) {
 
 echo "<a href='index.html'>Kembali ke Beranda</a>";
 echo "</div>";
-
 ?>
