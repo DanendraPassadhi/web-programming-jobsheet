@@ -2,15 +2,16 @@
 
 $koneksi = mysqli_connect("localhost", "root", "", "phealing");
 
-$nama = $_POST["nama"];
-$alamat = $_POST["alamat"];
-$email = $_POST["email"];
-$telepon = $_POST["telepon"];
+$nama = htmlspecialchars($_POST["nama"]);
+$alamat = htmlspecialchars($_POST["alamat"]);
+$email = htmlspecialchars($_POST["email"]);
+$telepon = htmlspecialchars($_POST["telepon"]);
 
 $query = "INSERT INTO registrasi 
         VALUES('$nama', '$alamat', '$email', '$telepon')";
 
 $result = mysqli_query($koneksi, $query);
+
 
 echo "<style>
     body {
