@@ -62,6 +62,10 @@
 
         //Mengubah baris menjadi array asosiatif
         $data = sqlsrv_fetch_array($query, SQLSRV_FETCH_ASSOC);
+
+        if($data == NULL){
+            header('Location: index.php');
+        }
         ?>
 
         <div class="row justify-content-center">

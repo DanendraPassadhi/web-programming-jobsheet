@@ -118,9 +118,9 @@
                         <tr>
                             <td><?php echo $no++; ?></td>
                             <td><?php echo htmlspecialchars($row->nama_barang); ?></td>
-                            <td><?php echo htmlspecialchars($row->kategori); ?></td>
-                            <td><?php echo htmlspecialchars($row->jumlah); ?></td>
-                            <td><?php echo htmlspecialchars($row->kondisi); ?></td>
+                            <td><?php echo $row->kategori; ?></td>
+                            <td><?php echo $row->jumlah; ?></td>
+                            <td><?php echo $row->kondisi; ?></td>
                             <td><?php echo htmlspecialchars($row->keterangan); ?></td>
                             <td>
                                 <a href="edit.php?id=<?php echo $row->id; ?>" class="btn btn-warning btn-sm">Edit</a>

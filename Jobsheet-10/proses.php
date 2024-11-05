@@ -3,12 +3,12 @@ include 'database.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nama_barang = htmlspecialchars($_POST['nama_barang']);
-    $kategori = htmlspecialchars($_POST['kategori']);
-    $jumlah = htmlspecialchars($_POST['jumlah']);
-    $kondisi = htmlspecialchars($_POST['kondisi']);
+    $kategori = $_POST['kategori'];
+    $jumlah = $_POST['jumlah'];
+    $kondisi = $_POST['kondisi'];
     $keterangan = htmlspecialchars($_POST['keterangan']);
 
-    //Mengirim data menuju tabel barang_event poda database
+    //Mengirim data menuju tabel barang_event poda database 
     $query = "INSERT INTO barang_event (nama_barang, kategori, jumlah, kondisi, keterangan) 
               VALUES ('$nama_barang', '$kategori', '$jumlah', '$kondisi', '$keterangan')";
 

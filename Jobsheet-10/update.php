@@ -4,9 +4,9 @@ include 'database.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['id'];
     $nama_barang = htmlspecialchars($_POST['nama_barang']);
-    $kategori = htmlspecialchars($_POST['kategori']);
-    $jumlah = htmlspecialchars($_POST['jumlah']);
-    $kondisi = htmlspecialchars($_POST['kondisi']);
+    $kategori = $_POST['kategori'];
+    $jumlah = $_POST['jumlah'];
+    $kondisi = $_POST['kondisi'];
     $keterangan = htmlspecialchars($_POST['keterangan']);
 
     //Mengupdate data pada tabel barang_event
